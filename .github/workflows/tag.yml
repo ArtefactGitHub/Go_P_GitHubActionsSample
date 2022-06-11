@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/docker-metadata-action#basic
-name: release
+name: tag
 
 on:
   push:
