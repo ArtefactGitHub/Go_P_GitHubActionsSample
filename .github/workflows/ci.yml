@@ -51,3 +51,6 @@ jobs:
 
       - name: Run functional tests
         run: go test -v ./...
+
+       - name: golangci-lint
+         uses: golangci/golangci-lint-action@v2
