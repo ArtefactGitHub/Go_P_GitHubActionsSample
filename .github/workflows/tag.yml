@@ -33,6 +33,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v3
+
       - name: Fetch required Go modules
         run: go mod download
 
@@ -50,6 +53,3 @@ jobs:
 
       - name: Run functional tests
         run: go test -v ./...
-
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v2
